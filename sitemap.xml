@@ -1,50 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Homepage -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Sitemap pour https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/ -->
+  <!-- Version: 1.0.1 - Optimisé pour une indexation complète et multilingue en 2025 -->
+  <!-- Date de création: 20 février 2025 -->
+  <!-- Objectif: Maximiser l’indexation pour IA, assistants vocaux et moteurs de recherche avec métadonnées enrichies -->
 
-    <!-- Pricing Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/pricing</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- Page principale avec référencement multilingue -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <!-- Liens alternatifs pour le multilingue -->
+    <xhtml:link rel="alternate" hreflang="sk" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/en/"/>
+  </url>
 
-    <!-- FAQ Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/faq</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+  <!-- Section Novinky (Contenu dynamique, actualités) -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/novinky/</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>ClairvoyanceMedium</news:name>
+        <news:language>sk</news:language>
+      </news:publication>
+      <news:publication_date>2025-02-20</news:publication_date>
+      <news:title>Novinky o rituáloch lásky</news:title>
+      <news:keywords>láska, rituál, novinky, magie</news:keywords>
+    </news:news>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/novinky/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/en/novinky/"/>
+  </url>
 
-    <!-- Blog Section -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <!-- Article Exemple avec métadonnées d'image enrichies -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/clanky/ako-ziskat-spat-lasku/</loc>
+    <lastmod>2025-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://clairvoyancemedium.github.io/Images/Rituel-Magie-Rouge-1.jpg</image:loc>
+      <image:caption>Rituál červenej mágie na lásku</image:caption>
+      <image:title>Červená mágia 2025</image:title>
+      <!-- Optionnel: emplacement géographique de l'image -->
+      <image:geo_location>Bratislava, Slovensko</image:geo_location>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-lasku.github.io/clanky/ako-ziskat-spat-lasku/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-lasku.github.io/en/clanky/ako-ziskat-spat-lasku/"/>
+  </url>
 
-    <!-- Individual Blog Post Example -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog/article1</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <!-- Page Mobile dédiée -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/mobile/</loc>
+    <lastmod>2025-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/mobile/"/>
+  </url>
 
-    <!-- Contact Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/contact</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- Exemple d'URL pour une image autonome avec métadonnées -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/Images/Rituel-Magie-Rouge-2.jpg</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://clairvoyancemedium.github.io/Images/Rituel-Magie-Rouge-2.jpg</image:loc>
+      <image:caption>Illustration du rituál d'amour</image:caption>
+      <image:title>Rituál d'amour - Illustration</image:title>
+    </image:image>
+  </url>
+
+  <!-- Exemple d'URL pour une vidéo avec métadonnées complètes -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/Videos/ritual-laska-2025.mp4</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:content_loc>https://clairvoyancemedium.github.io/Videos/ritual-laska-2025.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://clairvoyancemedium.github.io/Videos/ritual-laska-2025.mp4</video:player_loc>
+      <video:title>Rituál lásky 2025</video:title>
+      <video:description>Guide vidéo sur le rituál de magie rouge pour l'amour</video:description>
+      <video:thumbnail_loc>https://clairvoyancemedium.github.io/Images/ritual-laska-thumb.jpg</video:thumbnail_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2025-02-10</video:publication_date>
+      <video:tag>amour</video:tag>
+      <video:tag>ritual</video:tag>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <!-- Contenu speakable pour les assistants vocaux -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/speakable/ritualy-lasky.html</loc>
+    <lastmod>2025-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/speakable/ritualy-lasky.html"/>
+  </url>
+
+  <!-- API dédiée pour l'indexation par IA -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/api/ritualy.json</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Remarques sur la maintenance future :
+       - Mars 2025 : Ajout de nouvelles URLs dans /clanky/ et mise à jour des balises <lastmod>.
+       - Juin 2025 : Extension du sitemap pour intégrer de nouvelles vidéos et contenus speakable.
+       - Septembre 2025 : Ajustement des priorités en fonction des tests sur réseaux 5G.
+       - Décembre 2025 : Ajout de nouveaux liens alternatifs pour le multilingue (ex : fr, de).
+  -->
 </urlset>
