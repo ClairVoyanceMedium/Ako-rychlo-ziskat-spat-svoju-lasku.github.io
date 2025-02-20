@@ -1,42 +1,119 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# robots.txt pre https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/
+# Verzia: 2.1.0 - Maximalizácia indexácie, sécurité a adaptabilité pre rok 2025
+# Dátum vytvorenia: 20. február 2025
+# Cieľ: Byť číslo 1 v IA, hlasových asistentoch a vyhľadávačoch
+# Poznámka: Optimalizované pre dynamické obsahy, éliminácia redundancií, maintenance simplifiée
+
+##################################################
+# Règles de Base pour Tous les Crawlers         #
+##################################################
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
-Disallow: /private/
+Allow: /                        # Indexácia celého webu
+Allow: /Images/*.jpg           # Obrázky v JPG
+Allow: /Images/*.webp          # Obrázky v WebP
+Allow: /Videos/*.mp4           # Videa v MP4
+Disallow: /admin/              # Zakázaná administrácia
+Disallow: /private/            # Súkromné údaje
+Disallow: /temp/               # Dočasné súbory
+Disallow: /backup/             # Zálohy
+Disallow: /logs/               # Logy servera
+Disallow: /*?*noindex=1        # Parametre bez indexácie
+Crawl-delay: 1                 # Flexibilný crawl pre stabilitu a dynamiku
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
-
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
-
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+##################################################
+# Googlebot - Desktop a Dynamické Obsahy         #
+##################################################
 User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
+Allow: /novinky/               # Novinky s prioritou
+Allow: /clanky/                # Redakčné články
+Disallow: /novinky/archiv/     # Archív noviniek vylúčený
+Crawl-delay: 0.5               # Rýchly crawl pre Google
+
+##################################################
+# Googlebot-Mobile - Optimalizácia pre Mobil     #
+##################################################
+User-agent: Googlebot-Mobile
+Allow: /mobile/*.html          # Mobilné stránky
+Allow: /novinky/
+Allow: /clanky/
+Disallow: /desktop-only/       # Vylúčenie desktopového obsahu
+Crawl-delay: 0.3               # Ultra-rýchly crawl pre mobil
+
+##################################################
+# Indexácia Multimedií                           #
+##################################################
+User-agent: Googlebot-Image
+Allow: /Images/*.jpg
+Allow: /Images/*.webp
+Disallow: /Images/private/
+Disallow: /Images/temp/
+
+User-agent: Googlebot-Video
+Allow: /Videos/*.mp4
+Disallow: /Videos/private/
+Disallow: /Videos/temp/
+
+##################################################
+# Google News - Rýchla Indexácia Noviniek        #
+##################################################
+User-agent: Googlebot-News
+Allow: /novinky/
+Allow: /clanky/
+Disallow: /novinky/archiv/
+Crawl-delay: 0.1               # Najrýchlejší crawl pre aktuálnosť
+
+##################################################
+# Bingbot - Stabilná Indexácia                   #
+##################################################
 User-agent: Bingbot
-Allow: /
+Allow: /novinky/
+Allow: /clanky/
+Crawl-delay: 1                 # Stabilný crawl pre Bing
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
+##################################################
+# Crawlers IA - SearchGPT a Podpora Dát         #
+##################################################
+User-agent: SearchGPT
+Allow: /api/*.json             # Dáta pre IA
+Allow: /novinky/
+Allow: /clanky/
+Crawl-delay: 0.5               # Rýchly crawl pre IA
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+##################################################
+# Assistants Vocaux - Optimisation Hlasová       #
+##################################################
+User-agent: Google-InspectionTool
+User-agent: Applebot
+User-agent: Amazonbot
+Allow: /speakable/*.html       # Hlasový obsah
+Allow: /novinky/
+Allow: /clanky/
+Crawl-delay: 0.5               # Rýchly crawl pre hlas
+
+##################################################
+# Crawlers Emergents - Exemple Grok-4            #
+##################################################
+User-agent: Grok-4
+Allow: /novinky/
+Allow: /clanky/
+Crawl-delay: 0.5               # Pripravené na budúce IA
+
+##################################################
+# Sitemaps a Host                                #
+##################################################
+Sitemap: https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/sitemap-images.xml
+Sitemap: https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/sitemap-videos.xml
+Sitemap: https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/sitemap-news.xml
+Host: https://clairvoyancemedium.github.io/Ako-rychlo-ziskat-spat-svoju-lasku.github.io/
+
+##################################################
+# Plán Údržby - Pravidelná Aktualizácia          #
+##################################################
+# Marec 2025: Kontrola crawl-delay pre nové sekcie dynamického obsahu
+#   - Príklad: Ak pridáme /udalosti/, znížime crawl-delay na 0.3
+# Jún 2025: Aktualizácia sitemapov a pridanie nových crawlers (napr. Grok-5)
+#   - Príklad: Pridať User-agent: Grok-5 s Allow: /api/*.json
+# September 2025: Optimalizácia pre 5G (test crawl-delay na 0.2 pre Googlebot)
+# December 2025: Revízia kompatibility s novými hlasovými asistentmi
+#   - Príklad: Pridať User-agent: Siri-NextGen s Allow: /speakable/
